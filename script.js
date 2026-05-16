@@ -395,6 +395,16 @@ window.addEventListener("scroll", () => {
   }
 });
 
+// Show/hide on scroll
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    backToTopBtn.classList.add("visible");
+  } else {
+    backToTopBtn.classList.remove("visible");
+  }
+});
+
+// Scroll to top on click
 backToTopBtn.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
